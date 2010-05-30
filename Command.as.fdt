@@ -1,0 +1,16 @@
+package $(Package) $(CSLB){
+	import org.robotlegs.mvcs.Command;
+	
+	/**
+	$(CBI)* ...
+	$(CBI)* @author $(DefaultUser)
+	$(CBI)*/
+	public class $(FileName) extends Command$(CSLB){
+		
+		public override function execute ( ):void$(CSLB){
+			//contextView.addChild(view);$(EntryPoint)
+		}
+		
+	}
+	
+}

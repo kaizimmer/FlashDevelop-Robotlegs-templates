@@ -1,0 +1,18 @@
+package $(Package) $(CSLB){
+	import org.robotlegs.mvcs.Actor;
+	
+	/**
+	$(CBI)* ...
+	$(CBI)* @author $(DefaultUser)
+	$(CBI)*/
+	public class $(FileName) extends Actor$(CSLB){
+		/**
+		 * $(FileName) Constructor
+		 */
+		public function $(FileName) ( )$(CSLB){
+			$(EntryPoint)
+		}
+		
+	}
+	
+}

@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+How to install the templates into FlashDevelop:
+-------------------------------------------------------------------------------
+1.) Start FlashDevelop
+2.) When started click "Tools" -> "Application Files"
+3.) In the explorer window that will open navigate into:
+	-> Templates
+		-> ProjectFiles
+			-> AS3Project
+	In this folder create a new folder named "AS3 Robotlegs Project"
+4.) Copy the template files (*.fdt) into the currently created folder.
+
+
+-------------------------------------------------------------------------------
+How to create a class file with the templates:
+-------------------------------------------------------------------------------
+1.) Open the "Project" view if not currently open
+2.) Rightclick on the package where you want the new class to be created
+	-> select "Add"
+		-> "AS3 Robotlegs Project"
+			-> the template you want to use

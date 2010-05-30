@@ -1,0 +1,28 @@
+package $(Package) $(CSLB){
+	import flash.events.Event;
+	
+	/**
+	$(CBI)* ...
+	$(CBI)* @author $(DefaultUser)
+	$(CBI)*/
+	public class $(FileName)  extends Event$(CSLB){
+		public static const EVENT_NAME:String = 'EVENT_NAME';
+		
+		private var _body:*;
+		
+		public function $(FileName) ( type:String, body:* = null )$(CSLB){
+			super(type);
+			_body = body;$(EntryPoint)
+		}
+		
+		public function get body():*$(CSLB){
+			return _body;
+		}
+		
+		public override function clone ( ):Event$(CSLB){
+			return new $(FileName)(type, body);
+		}
+		
+	}
+	
+}

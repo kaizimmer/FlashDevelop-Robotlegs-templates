@@ -1,0 +1,43 @@
+package $(Package) $(CSLB){
+	import org.robotlegs.mvcs.Mediator;
+	import flash.display.DisplayObjectContainer;
+	
+	/**
+	$(CBI)* ...
+	$(CBI)* @author $(DefaultUser)
+	$(CBI)*/
+	public class $(FileName) extends Mediator$(CSLB){
+		[Inject]
+        public var view:DisplayObjectContainer;
+		
+		//[Inject]
+		//public var model:Model;
+		
+		/**
+		 * $(FileName) Constructor
+		 */
+		public function $(FileName) ( )$(CSLB){
+			super();
+			// Avoid doing work in your constructors!
+			// Mediators are only ready to be used when onRegister gets called
+		}
+		
+		/**
+		 * 
+		 */
+		public override function onRegister ( ):void$(CSLB){
+			// do mapping here...
+			
+			// Listen to the view
+			//eventMap.mapListener(view, MouseEvent.CLICK, onClick);
+			
+			// Listen to the context
+			//eventMap.mapListener(eventDispatcher, HelloFlashEvent.BALL_CLICKED, onSomeBallClicked);
+		}
+		
+	}
+	
+}
+
+
+

@@ -1,0 +1,41 @@
+package $(Package) $(CSLB){
+	import org.robotlegs.mvcs.Context;
+	import flash.display.DisplayObjectContainer;
+	
+	/**
+	$(CBI)* ...
+	$(CBI)* @author $(DefaultUser)
+	$(CBI)*/
+	public class $(FileName) extends Context$(CSLB){
+		/**
+		 * $(FileName) Constructor
+		 */
+		public function $(FileName) ( contextView:DisplayObjectContainer )$(CSLB){
+			super(contextView);
+		}
+		
+		/**
+		 * 
+		 */
+		public override function startup ( ):void$(CSLB){
+			// Map some Commands to Events
+			//commandMap.mapEvent(ContextEvent.STARTUP_COMPLETE, CreateBallCommand, ContextEvent, true);
+			
+			// Create a rule for Dependency Injection
+			//injector.mapSingleton(StatsModel);
+			
+			// Here we bind Mediator Classes to View Classes:
+			// Mediators will be created automatically when
+			// view instances arrive on stage (anywhere inside the context view)
+			//mediatorMap.mapView(Ball, BallMediator);
+			
+			// Manually add something to stage
+			//contextView.addChild(new Readout());
+			
+			// And we're done
+			super.startup();
+		}
+		
+	}
+	
+}
